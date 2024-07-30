@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base{
     body{
-        font-family: "Lato", "sans-serif";
+        font-family: "Open Sans", "sans-serif";
     }
 }
-
 
 .owl-prev, .owl-next{
     display: none;
@@ -20,5 +20,20 @@
     opacity: 1;
 }
 @layer components{
-    
+    .gc-3{
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+    }
+    .gc-4{
+        @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4;
+    }
+    .gc-12{
+        @apply grid lg:grid-cols-12; 
+    }
 }
+.svg-white {
+    filter: brightness(0) invert(1);
+  }
+.svg-primary {
+   @apply fill-primary;
+  }
+  

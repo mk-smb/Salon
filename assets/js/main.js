@@ -1,20 +1,18 @@
 $(".testimonial-carousel").owlCarousel({
     items: 1,
     // nav: true,
-    // dots: true,
+    dots: true,
     margin: 20,
     loop: true,
     autoplay: true,
+});
+
+// banner-carousel
+$(".banner-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
 })
-
-
-    //   testimonials carousel
-     $('.review-prev').click(function() {
-        $('.owl-carousel').trigger('prev.owl.carousel');
-      });
-      $('.review-next').click(function() {
-        $('.owl-carousel').trigger('next.owl.carousel');
-      });
 
 // tab content
 
